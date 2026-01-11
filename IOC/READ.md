@@ -38,7 +38,6 @@ The IoC Container offers several advantages:
 ---
 
 ## 🛠️ Configuration Methods
-You can configure the IoC container using:
 1. **XML Configuration** (Classic approach)
 2. **Java Annotations** (e.g., `@Component`, `@Service`, `@Autowired`)
 3. **Java-based Configuration** (using `@Configuration` and `@Bean` classes)
