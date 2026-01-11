@@ -1,0 +1,10 @@
+package IOC;
+
+public class Airtel implements Sim{
+    public void calling(){
+        System.out.println("using Airtel sim");
+    }
+    public void data() {
+        System.out.println("Airtel Data");
+    }
+}
