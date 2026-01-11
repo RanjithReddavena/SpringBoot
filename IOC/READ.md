@@ -1,22 +1,44 @@
-🚀 Module 01: Inversion of Control (IoC)
+# 🚀 Module 01: Inversion of Control (IoC)
 
-Spring IoC (Inversion of Control) Container is the core of the Spring Framework.
-It creates and manages objects (beans), injects dependencies, and manages their life cycles.
-It uses Dependency Injection (DI) based on configurations from XML files,Java-based configuration,annotations,or POJOs.
-Since the container,not the developer,controls object creation and wiring,it's called Inversion of Control (IoC).
-Types of IoC Containers
+The **Spring IoC (Inversion of Control) Container** is the core of the Spring Framework. It shifts the responsibility of object management from the developer to the framework.
 
-*There are two types of IoC containers in Spring:*
-1. BeanFactory
-    The most basic version of the IoC container Provides basic support for dependency injection and bean lifecycle management
-    Suitable for lightweight applications where advanced features are not required
-2. ApplicationContext
-    An extension of BeanFactory with more enterprise features Includes event propagation, internationalization, and more Preferred choice for most Spring applications
-Key Features of IoC Container
+## 📖 What is IoC?
+In traditional programming, the developer manually creates objects and manages their dependencies. In Spring, the **container** takes over this responsibility:
+* It creates and manages objects (**Beans**).
+* It handles **Dependency Injection (DI)** based on configurations.
+* It manages the entire **Bean Lifecycle**.
 
-/*The key features of IoC Container are:*/
+Because the container—not the developer—controls object creation and wiring, it is called **Inversion of Control**.
 
-*Dependency Injection: Automatically injects dependencies into our classes
-*Lifecycle Management: Manages the lifecycle of beans, including instantiation, initialization, and deletion
-*Configuration Flexibility: Supports both XML-based and annotation-based configurations
-*Loose Coupling: Promotes loose coupling by decoupling the implementation of objects from their usage
+---
+
+## 🏗️ Types of IoC Containers
+Spring provides two types of IoC containers:
+
+### 1. BeanFactory
+* The most basic version of the IoC container.
+* Provides basic support for dependency injection and bean lifecycle management.
+* **Best for:** Lightweight applications or resource-constrained environments.
+
+### 2. ApplicationContext
+* An extension of `BeanFactory` with advanced enterprise features.
+* Includes event propagation, internationalization (i18n), and AOP integration.
+* **Best for:** Most modern Spring applications (the preferred choice).
+
+---
+
+## ✨ Key Features
+The IoC Container offers several advantages:
+
+*   **Dependency Injection:** Automatically injects dependencies into your classes.
+*   **Lifecycle Management:** Manages beans from instantiation through deletion.
+*   **Configuration Flexibility:** Supports **XML-based**, **Annotation-based**, and **Java-based** configurations.
+*   **Loose Coupling:** Promotes cleaner code by decoupling object implementation from its usage.
+
+---
+
+## 🛠️ Configuration Methods
+You can configure the IoC container using:
+1. **XML Configuration** (Classic approach)
+2. **Java Annotations** (e.g., `@Component`, `@Service`, `@Autowired`)
+3. **Java-based Configuration** (using `@Configuration` and `@Bean` classes)
